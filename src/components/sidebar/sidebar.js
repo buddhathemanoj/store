@@ -25,7 +25,7 @@ function LeftSidebar(){
               
                 <li className="mb-2 font-semibold text-xl">
                     
-                    <Link to={'/'}><img className="mask mask-squircle w-10" src={logo} alt="DashWind Logo"/>GeekyApe</Link> </li>
+                    <Link to={'/'}>Menu</Link> </li>
                 {
                     routes.map((route, k) => {
                         return(
@@ -37,7 +37,7 @@ function LeftSidebar(){
                                         end
                                         to={route.path}
                                         className={({isActive}) => `${isActive ? 'font-semibold  bg-base-200 ' : 'font-normal'}`} >
-                                           {route.icon} {route.name}
+                                         {route.name}
                                             {
                                                 location.pathname === routes.path ? (<span className="absolute inset-y-0 left-0 w-1 rounded-tr-md rounded-br-md bg-primary "
                                                 aria-hidden="true"></span>) : null
