@@ -10,8 +10,8 @@ import Homepage from '../src/components/homepage/Homepage'
 
 function App() {
   return (
-    <div className="drawer lg:drawer-open">
-      <input id="left-sidebar-drawer" type="checkbox" className="drawer-toggle" />
+    <div>
+      
       <Router>
             
             <Routes>
