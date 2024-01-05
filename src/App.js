@@ -15,7 +15,7 @@ function App() {
       <Router>
             
             <Routes>
-            <Route path='/login' element={<Login />}/>
+            <Route path='/' element={<Login />}/>
             <Route path="/popularpacks" element={<PopularPacks/>}/>
             <Route path="/bundledetails" element={<BundleDetails/>}/>
             <Route path='/homepage' element={<Homepage/>}/>
