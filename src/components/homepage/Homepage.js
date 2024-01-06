@@ -1,18 +1,15 @@
 import React from "react";
-import PageContent from "../sidebar/pagecontent";
-import LeftSidebar from "../sidebar/sidebar";
-import { Router } from "react-router-dom";
-
+import PopularPackDesign from "../popularpacks/component/PopularPackDesign";
+import withLayout from "../sidebar/withlayout";
 const Homepage = () => {
     return (
-        <div className="drawer lg:drawer-open">
-        <input id="left-sidebar-drawer" type="checkbox" className="drawer-toggle" />
-        
-            <PageContent/>
-            <LeftSidebar/>
-            
+        <div>
+        <div>
+            <PopularPackDesign/>
         </div>
+        </div>
+        
     )
 }
 
-export default Homepage
+export default withLayout(Homepage)
