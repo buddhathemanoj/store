@@ -11,7 +11,7 @@ const Login = () => {
 
   const handleLogin = () => {
     if (!phoneNumber) {
-      setPhoneNumberError('Phone number is required');
+      setPhoneNumberError('Phone Number is required');
     } else {
       setPhoneNumberError('');
     }
@@ -28,7 +28,7 @@ const Login = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen pl-17 pr-8 pt-2 pb-6 bg-white text-lg">
-      <GiShoppingCart className="text-4xl mb-4" />
+      <GiShoppingCart className="text-4xl mb-4 bg-green-500 rounded-full p-2" />
       <p className="text-center text-black font-bold text-lg">Welcome to our</p>
       <p className="text-center text-green font-bold text-lg">E-Grocery</p>
       <div className="w-64">
