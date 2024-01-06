@@ -2,6 +2,7 @@ import React from "react";
 import Packs from "./Packs";
 import fruit from "../../assets/fruits.jpg";
 
+
 const data = [
   {
     img: "https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c1a7.png",
@@ -11,6 +12,8 @@ const data = [
     rs: "$50.32",
   },
 ];
+
+   
 
 const duplicatedData = Array(8).fill(data[0]);
 const PopularPacks = () => {
