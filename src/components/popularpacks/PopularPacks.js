@@ -3,7 +3,7 @@ import React from "react";
 
 const data = [
   {
-    img: "https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c1a7.png",
+    img: "https://img.freepik.com/premium-vector/fresh-fruits-wicker-basket-isolated-white_43605-2367.jpg?size=626&ext=jpg",
     heading: "Bundle Pack",
     subheading: "Onion, Oil, Salt",
     RS: "$35",
