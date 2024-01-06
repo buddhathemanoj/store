@@ -33,7 +33,7 @@ const PopularPacks = () => {
                   <div className=" ">
                     <h2 className="text-xl">{item.RS}</h2>
                   </div>
-                  <div className=" pt-2 text-lg text-xs" > {item.rs} </div>
+                  <div className=" pt-2 text-lg text-xs"pl-544 > {item.rs} </div>
                 </div>
               </div>
             </div></div>
