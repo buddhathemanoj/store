@@ -28,9 +28,9 @@ const Login = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen pl-17 pr-8 pt-2 pb-6 bg-white text-lg">
-      <GiShoppingCart className="text-4xl mb-4 bg-green-500 rounded-full p-2" />
+      <GiShoppingCart className="text-4xl mb-4" />
       <p className="text-center text-black font-bold text-lg">Welcome to our</p>
-      <p className="text-center text-green font-bold text-lg">E-Grocery</p>
+      <p className="text-center text-green-500 font-bold text-lg">E-Grocery</p>
       <div className="w-64">
         <label className="block text-white-700 text-sm font-bold mb-2" htmlFor="phoneNumber">
           Phone Number
@@ -60,24 +60,24 @@ const Login = () => {
           {passwordError && <p className="text-red-500 text-sm mt-1">{passwordError}</p>}
         </div>
         <div className="text-right mb-4">
-          <span className="text-green-500 text-xs font-bold mb-2 cursor-pointer">Forgot Password?</span>
+         <span className="text-green-700 text-xs font-bold mb-2 cursor-pointer">Forgot Password?</span>
         </div>
-        <button onClick={handleLogin} className="w-full bg-green-500 text-white p-2 rounded mb-4">
+        <button onClick={handleLogin} className="w-full bg-green-500 text-white px-4 py-2 text-sm rounded-md mb-4">
           Login
         </button>
         <div className="flex">
-          <button className="flex items-center justify-center w-full border border-red-500 text-red p-2 font-bold border-radius-100 text-sm rounded mr-2 hover:border-blue-600 hover:bg-blue-600">
+          <button className="flex items-center justify-center w-full border border-red-500 text-red p-2 font-bold border-radius-100 text-sm rounded mr-2 hover:border-blue-100 hover:bg-blue-100">
             <FcGoogle className="mr-3" />
             Google
           </button>
-          <button className="flex items-center justify-center w-full border border-gray-500 text-black p-2 font-bold border-radius-100 text-sm rounded hover:border-blue-600 hover:bg-blue-600">
+          <button className="flex items-center justify-center w-full border border-gray-500 text-black p-2 font-bold border-radius-100 text-sm rounded hover:border-blue-100 hover:bg-blue-100">
             <IoLogoApple className="mr-3" />
             Apple
           </button>
         </div>
         <div className="text-center mt-3">
           <span className="text-gray-500 cursor-pointer text-sm">Don't have an account?</span>
-          <span className="text-green-500 font-bold cursor-pointer text-sm ml-1">Sign up</span>
+          <span className="text-green-700 font-bold cursor-pointer text-sm ml-1 rounded">Sign up</span>
         </div>
       </div>
     </div>
