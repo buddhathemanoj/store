@@ -21,12 +21,12 @@ function PopularPacklist() {
   <figure className="px-10 pt-10">
     <img src={card.img} alt="Shoes" className="rounded-xl " />
   </figure>
-  <div className="card-body items-center text-center">
-    <h2 className="card-title font-normal ">{card.heading}</h2>
+  <div className="card-body items-start text-start">
+    <h2 className="card-title font-normal">{card.heading}</h2>
     <p className='font-thin'>{card.subheading}</p>
     <div className="card-actions">
     <p>{card.rate}</p>
-    <p className='font-thin'>{card.offer}</p>
+    <p className='font-thin line-through'>{card.offer}</p>
     </div>
   </div>
 </div>
@@ -39,12 +39,12 @@ function PopularPacklist() {
   <figure className="px-10 pt-10">
     <img src={card.img} alt="Shoes" className="rounded-xl " />
   </figure>
-  <div className="card-body items-center text-center">
+  <div className="card-body items-start text-start">
     <h2 className="card-title font-normal">{card.heading}</h2>
     <p className='font-thin'>{card.subheading}</p>
     <div className="card-actions">
     <p>{card.rate}</p>
-    <p className='font-thin'>{card.offer}</p>
+    <p className='font-thin line-through'>{card.offer}</p>
     </div>
   </div>
 </div>
@@ -57,12 +57,12 @@ function PopularPacklist() {
   <figure className="px-10 pt-10">
     <img src={card.img} alt="Shoes" className="rounded-xl" />
   </figure>
-  <div className="card-body items-center text-center">
+  <div className="card-body items-start text-start">
     <h2 className="card-title font-normal">{card.heading}</h2>
     <p className='font-thin'>{card.subheading}</p>
     <div className="card-actions">
     <p>{card.rate}</p>
-    <p className='font-thin'>{card.offer}</p>
+    <p className='font-thin line-through'>{card.offer}</p>
     </div>
   </div>
 </div>
@@ -75,12 +75,12 @@ function PopularPacklist() {
   <figure className="px-10 pt-10">
     <img src={card.img} alt="Shoes" className="rounded-xl" />
   </figure>
-  <div className="card-body items-center text-center">
+  <div className="card-body items-start text-start">
     <h2 className="card-title font-normal">{card.heading}</h2>
     <p className='font-thin'>{card.subheading}</p>
     <div className="card-actions">
     <p>{card.rate}</p>
-    <p className='font-thin'>{card.offer}</p>
+    <p className='font-thin line-through'>{card.offer}</p>
     </div>
   </div>
 </div>
