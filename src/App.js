@@ -5,8 +5,8 @@ import Login from '../src/components/login/Login'
 import PopularPacks from '../src/components/popularpacks/PopularPacks'
 import BundleDetails from '../src/components/bundledetails/BundleDetails'
 import Homepage from '../src/components/homepage/Homepage'
-import PageContent from './components/sidebar/pagecontent';
-import LeftSidebar from './components/sidebar/sidebar';
+import Newitems from './components/ournewitem/newitems';
+
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
             <Route path="/popularpacks" element={<PopularPacks/>}/>
             <Route path="/bundledetails" element={<BundleDetails/>}/>
             <Route path='/dashboard' element={<Homepage/>}/>
+            <Route path="/newitems" element={<Newitems/>}/>
             </Routes>
 
       </Router>
