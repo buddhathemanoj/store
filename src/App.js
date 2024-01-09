@@ -5,6 +5,9 @@ import Login from '../src/components/login/Login'
 import PopularPacks from '../src/components/popularpacks/PopularPacks'
 import BundleDetails from '../src/components/bundledetails/BundleDetails'
 import Homepage from '../src/components/homepage/Homepage'
+import Newitems from './components/ournewitem/newitems';
+
+
 
 import PageContent from './components/sidebar/pagecontent';
 import LeftSidebar from './components/sidebar/sidebar';
@@ -32,6 +35,7 @@ function App() {
             <Route path='/Welcome' element={<Welcome/>}/>
             <Route path='/StartPage' element={<StartPage/>}/>
             <Route path='/dashboard' element={<Homepage/>}/>
+            <Route path="/newitems" element={<Newitems/>}/>
             </Routes>
 
       </Router>
