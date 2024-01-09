@@ -35,7 +35,7 @@ const PopularPacks = () => {
          <div>    
            <div
               key={index}
-              className="card w-44 h-66 bg-base-100 m-2 shadow-xl"
+              className="card w-44 h-66 bg-base-100 m-2 shadow-xl border-2 border-solid"
             >
               <figure>
                 <img className="w-36 h-36 ml-10" src={item.img} alt="Fruits" />

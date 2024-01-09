@@ -15,25 +15,7 @@ function OurnewitemList () {
     return(
         <div>
           <div className="carousel rounded-box w-11/12 gap-4 h-64" >
-  <div className="carousel-item w-48 border-solid border-grey-500">
-  {distributedCarddata.map((card,data) => (
-            <div className="card w-96 bg-base-100 shadow-xl border-solid border-grey-500 outline-21" key={data}>
-  <figure className="px-10 pt-10">
-    <img src={card.img} alt="Shoes" className="rounded-xl " />
-  </figure>
-  <div className="card-body items-start text-start">
-    <h2 className="card-title font-light">{card.heading}</h2>
-    <p className='font-thin'>{card.subheading}</p>
-    <div className="card-actions">
-    <p>{card.rate}</p>
-    <p className='font-thin line-through'>{card.offer}</p>
-    </div>
-  </div>
-</div>
-
-          ))}
-  </div> 
-  <div className="carousel-item w-48">
+  <div className="carousel-item w-48 border-solid border-2">
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">
@@ -51,7 +33,25 @@ function OurnewitemList () {
 
           ))}
   </div> 
-  <div className="carousel-item w-48">
+  <div className="carousel-item w-48 border-solid border-2">
+  {distributedCarddata.map((card,data) => (
+            <div className="card w-96 bg-base-100 shadow-xl" key={data}>
+  <figure className="px-10 pt-10">
+    <img src={card.img} alt="Shoes" className="rounded-xl " />
+  </figure>
+  <div className="card-body items-start text-start">
+    <h2 className="card-title font-light">{card.heading}</h2>
+    <p className='font-thin'>{card.subheading}</p>
+    <div className="card-actions">
+    <p>{card.rate}</p>
+    <p className='font-thin line-through'>{card.offer}</p>
+    </div>
+  </div>
+</div>
+
+          ))}
+  </div> 
+  <div className="carousel-item w-48 border-solid border-2">
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">
@@ -69,7 +69,7 @@ function OurnewitemList () {
 
           ))}
   </div> 
-  <div className="carousel-item w-48">
+  <div className="carousel-item w-48 border-solid border-2">
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">

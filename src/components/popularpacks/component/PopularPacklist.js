@@ -15,7 +15,7 @@ function PopularPacklist() {
     return(
         <div>
           <div className="carousel rounded-box w-11/12 gap-4 h-64" >
-  <div className="carousel-item w-48">
+  <div className="carousel-item w-48 border-2 border-solid">
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">
@@ -33,7 +33,7 @@ function PopularPacklist() {
 
           ))}
   </div> 
-  <div className="carousel-item w-48">
+  <div className="carousel-item w-48 border-2 border-solid">
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">
@@ -51,7 +51,7 @@ function PopularPacklist() {
 
           ))}
   </div> 
-  <div className="carousel-item w-48">
+  <div className="carousel-item w-48 border-2 border-solid">
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">
@@ -69,7 +69,7 @@ function PopularPacklist() {
 
           ))}
   </div> 
-  <div className="carousel-item w-48">
+  <div className="carousel-item w-48 border-2 border-solid">
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">
