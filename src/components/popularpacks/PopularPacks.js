@@ -29,18 +29,18 @@ const PopularPacks = () => {
         <div class="flex flex-wrap" >
           {duplicatedData.map((item, index) => (
          <div onClick={() => navigate("/bundledetails")}>
-           <div key={index}class="card w-44 h-66 bg-base-100 m-2 shadow-xl" >
+           <div key={index}class="card w-44 h-60 bg-base-100 m-2 shadow-lg border-2 border-solid rounded-lg  px-2 pt-2" >
               <figure>
                 <img class="w-28 h-28" src={item.img} alt="Fruits"/>
               </figure>
               <div class="pl-4 ">
                 <h2 class="card-title text-xl ">{item.heading}</h2>
-                 <p class="text-sm">{item.subheading} </p>
+                 <p class="text-lg text-gray-400">{item.subheading} </p>
                 <div class="card-actions justify-start">
                   <div class=" ">
-                    <h2 class="text-xl">{item.RS}</h2>
+                    <h2 class="text-xl font-semibold">{item.RS}</h2>
                   </div>
-                  <div class=" pt-2 text-lg text-xs"pl-544 > {item.rs} </div>
+                  <div class=" pt-2 text-lg text-sm font-normal line-through"pl-544 > {item.rs} </div>
                 </div>
               </div>
             </div>

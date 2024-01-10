@@ -13,8 +13,8 @@ const Packdetails = () => {
     {packages.map((pack,details)=>(
         <div key={details} class="flex  justify-around pt-2">
             <img src={pack.img} class='w-14 h-16'/>
-            <p>{pack.name}</p>
-            <p>{pack.weight}</p>
+            <p class="text-lg font-medium">{pack.name}</p>
+            <p class="text-lg font-normal">{pack.weight}</p>
         </div>
     ))}
    </div>

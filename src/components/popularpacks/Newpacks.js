@@ -1,26 +1,25 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { CiShoppingCart } from "react-icons/ci";
 import { IoArrowBack ,IoChevronForward } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-
-const ProductDetails = () => {
-  const [count, setCount] = useState(0);
+const Newpacks = () => {
+    const [count, setCount] = useState(0);
   
-const increaseCount = () => {
-  setCount(prevCount => prevCount + 1);
-};
-
-const decreaseCount = () => {
-  if (count > 0) {
-    setCount(prevCount => prevCount - 1);
-  }
-};
- return (
-        <div className=" mt-4 ml-2 mr-3 ">
+    const increaseCount = () => {
+      setCount(prevCount => prevCount + 1);
+    };
+    
+    const decreaseCount = () => {
+      if (count > 0) {
+        setCount(prevCount => prevCount - 1);
+      }
+    };
+  return (
+    <div className=" mt-4 ml-2 mr-3 ">
             <div class="flex">
              <div class="justify-items-start ">
-             <Link to="/ournewitems"class="text-xl mt-1"><IoArrowBack/></Link> 
+             <Link to="/dashboard"class="text-xl mt-1"><IoArrowBack/></Link> 
             </div>
             <div><h2 class="pl-6 ml-20 md:pl-50 justify-center text-base font-medium">Product Details</h2></div>
             </div>
@@ -69,7 +68,7 @@ const decreaseCount = () => {
         <button class="ml-16 mt-2 bg-green-500 border-solid rounded w-52 rounded-lg h-10 text-lg font-medium text-white">Buy Now </button>
      </div>
  </div>
-    )
-};
+  );
+}
 
-export default ProductDetails;
+export default Newpacks;

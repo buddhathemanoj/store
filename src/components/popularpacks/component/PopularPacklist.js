@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function PopularPacklist() {
+
 
   const cardData = [
     {
@@ -21,12 +23,13 @@ function PopularPacklist() {
 
   const distributedCarddata = Array(1).fill(cardData[0])
   const packdata = Array(1).fill(cardData[1])
+  const navigate = useNavigate();
     return(
    <div>
           <div className="carousel rounded-box w-full gap-4 h-64" >
         <div className="carousel-item w-48 border-2 border-solid rounded-lg">
              {distributedCarddata.map((card,data) => (
-            <div className="card w-96 bg-base-100 shadow-xl ml-2" key={data}>
+            <div className="card w-96 bg-base-100 shadow-xl ml-2" key={data} onClick={() => navigate("/packs")}>
          <figure className="px-12 pt-10">
            <img src={card.img} alt="Shoes" className="rounded-xl mt-2" />
       </figure>
@@ -34,8 +37,8 @@ function PopularPacklist() {
        <h2 className="card-title font-medium text-xl ">{card.heading}</h2>
        <p className='font-normal'>{card.subheading}</p>
      <div className="card-actions">
-        <p class="line-through text-lg font-medium">{card.rate}</p>
-        <p className='font-normal'>{card.offer}</p>
+        <p class=" text-lg font-medium">{card.rate}</p>
+        <p className='font-normal line-through'>{card.offer}</p>
     </div>
   </div>
 </div>
@@ -52,8 +55,8 @@ function PopularPacklist() {
     <h2 className="card-title font-semibold text-base ">{card.heading}</h2>
     <p className='font-normal'>{card.subheading}</p>
     <div className="card-actions">
-    <p class="line-through text-lg font-medium">{card.rate}</p>
-    <p className='font-thin'>{card.offer}</p>
+    <p class="text-lg font-medium">{card.rate}</p>
+    <p className='font-normal line-through'>{card.offer}</p>
     </div>
   </div>
 </div>
@@ -70,8 +73,8 @@ function PopularPacklist() {
     <h2 className="card-title font-medium text-xl">{card.heading}</h2>
     <p className='font-normal'>{card.subheading}</p>
     <div className="card-actions">
-    <p class="line-through text-lg font-medium">{card.rate}</p>
-    <p className='font-thin'>{card.offer}</p>
+    <p class="text-lg font-medium">{card.rate}</p>
+    <p className='font-normal line-through'>{card.offer}</p>
     </div>
   </div>
 </div>
@@ -88,8 +91,8 @@ function PopularPacklist() {
         <h2 className="card-title font-medium text-xl">{card.heading}</h2>
         <p className='font-normal'>{card.subheading}</p>
      <div className="card-actions">
-         <p class="line-through text-lg font-medium">{card.rate}</p>
-         <p className='font-thin'>{card.offer}</p>
+         <p class=" text-lg font-medium">{card.rate}</p>
+         <p className='font-normal line-through'>{card.offer}</p>
      </div>
    </div>
 </div>
