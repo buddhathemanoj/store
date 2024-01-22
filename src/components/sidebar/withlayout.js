@@ -15,7 +15,7 @@ const withLayout = (ContentComponent) => {
           <Header />
 
           {/* ContentComponent is passed as a prop and rendered */}
-          <main className="flex-1 overflow-x-hidden overflow-y-auto  w-full ml-5 mt-5 ">
+          <main className="flex-1 overflow-x-hidden overflow-y-auto  w-full mt-5 ">
             <ContentComponent {...props} />
           </main>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function OurnewitemList () {
   
@@ -12,10 +13,11 @@ function OurnewitemList () {
   ]
 
   const distributedCarddata = Array(1).fill(cardData[0])
+  const navigate = useNavigate();
     return(
-        <div>
-          <div className="carousel rounded-box w-11/12 gap-4 h-64" >
-  <div className="carousel-item w-48 border-solid border-2">
+        <div className="ml-5">
+          <div className="carousel rounded-box w-11/12 gap-4 h-64" onClick={() => navigate('/productdetails')}>
+  <div className="carousel-item w-48 border-solid border-2 rounded-lg">
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">
@@ -33,7 +35,7 @@ function OurnewitemList () {
 
           ))}
   </div> 
-  <div className="carousel-item w-48 border-solid border-2">
+  <div className="carousel-item w-48 border-solid border-2 rounded-lg" onClick={() => navigate('/productdetails')}>
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">
@@ -51,7 +53,7 @@ function OurnewitemList () {
 
           ))}
   </div> 
-  <div className="carousel-item w-48 border-solid border-2">
+  <div className="carousel-item w-48 border-solid border-2 rounded-lg" onClick={() => navigate('/productdetails')}>
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">
@@ -69,7 +71,7 @@ function OurnewitemList () {
 
           ))}
   </div> 
-  <div className="carousel-item w-48 border-solid border-2">
+  <div className="carousel-item w-48 border-solid border-2 rounded-lg" onClick={() => navigate('/productdetails')}>
   {distributedCarddata.map((card,data) => (
             <div className="card w-96 bg-base-100 shadow-xl" key={data}>
   <figure className="px-10 pt-10">

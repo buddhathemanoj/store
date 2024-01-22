@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoArrowBack } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
-const BundleDetails = () => {
+const BundleDetailsPP = () => {
     const [count, setCount] = useState(0);
 
   const increaseCount = () => {
@@ -31,7 +31,7 @@ const BundleDetails = () => {
         <div className="w-full">
             <div class="flex mt-5 ml-5 ">
              <div  class="grid justify-items-start ">
-           <p class="text-xl mt-1"><IoArrowBack onClick={() => navigate('/dashboard')}/></p> 
+           <p class="text-xl mt-1"><IoArrowBack onClick={() => navigate('/popularpacks')}/></p> 
             </div>
             <div><h3 class="pl-6 ml-24 md:ml-50 text-base font-medium">Bundle Details</h3></div>
             </div>
@@ -100,4 +100,4 @@ const BundleDetails = () => {
     )
 }
 
-export default BundleDetails
+export default BundleDetailsPP
