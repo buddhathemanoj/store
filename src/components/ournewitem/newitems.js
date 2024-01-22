@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 function Newitems() {
 
-    const data = [
+    const data = 
         {
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVRz_5op7pn5IZt3U0GgyvDE3StH0qjbEvg&usqp=CAU",
           heading: "Perry's Ice Cream",
@@ -11,12 +11,15 @@ function Newitems() {
           weight: "800gm",
           RS: "$13",
           rs: "$15",
-        },
-      ];
+        }
       
          
       
-      const duplicatedData = Array(8).fill(data[0]);
+      const duplicatedData = Array(8).fill(0).map((_,index) => ({
+        ...data,
+        id: index + 1,
+      }));
+      const navigate = useNavigate();
       
       return (
         <div >
@@ -29,11 +32,10 @@ function Newitems() {
     <p>New Items</p>
             </div>
             <div className="flex flex-wrap w-full ml-6">
-              {duplicatedData.map((item, index) => (
-             <div>    
+              {duplicatedData.map((item) => (
+             <div key={item.id}>    
                <div
-                  key={index}
-                  className="card w-44 h-66 bg-base-100 m-2 shadow-xl border-2 border-solid"
+                  className="card w-44 h-66 bg-base-100 m-2 shadow-xl border-2 border-solid" onClick={() => navigate(`/productdetailspp/${item.id}`)}
                 >
                   <figure>
                     <img className="w-36 h-36 ml-10" src={item.img} alt="Fruits" />

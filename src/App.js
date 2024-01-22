@@ -9,6 +9,12 @@ import Newitems from './components/ournewitem/newitems';
 import FrontPage from './components/frontpage/FrontPage';
 import Welcome from './components/welcome/Welcome';
 import StartPage from './components/startpage/StartPage';
+import BundleDetailsPP from './components/bundledetails/BundleDetailsPP';
+import ProductDetails from './components/productdetails/ProductDetails';
+import ProductDetailsPP from './components/productdetails/ProductDetailsPP';
+import Checkout from './components/checkout/Checkout';
+import CardDetails from './components/carddetails/CardDetails';
+import OrderPlaced from './components/orderplaced/OrderPlaced';
 
 function App() {
   return (
@@ -21,16 +27,19 @@ function App() {
             <Route path='/' element={<Login />}/>
             <Route path="/popularpacks" element={<PopularPacks/>}/>
             <Route path="/bundledetails" element={<BundleDetails/>}/>
-
-            <Route path='/homepage' element={<Homepage/>}/>
             <Route path='/dashboard' element={<Homepage/>}/>
             <Route path='/FrontPage' element={<FrontPage/>}/>
             <Route path='/Welcome' element={<Welcome/>}/>
             <Route path='/StartPage' element={<StartPage/>}/>
-            <Route path='/dashboard' element={<Homepage/>}/>
             <Route path="/newitems" element={<Newitems/>}/>
+            <Route path="/bundledetailspp/:id" element={<BundleDetailsPP/>}/>
+            <Route path="/productdetails" element={<ProductDetails/>}/>
+            <Route path="/productdetailspp/:id" element={<ProductDetailsPP/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
+            <Route path='/carddetails' element={<CardDetails/>}/>
+            <Route path='/orderplaced' element={<OrderPlaced/>}/>
             </Routes>
-
+            
       </Router>
 
     

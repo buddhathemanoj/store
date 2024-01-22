@@ -1,25 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
 
 const PopularPacks = () => {
 
-  const data = [
+  const data = 
     {
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMV2PqOgLq-yhqBplT9x1ZQ-CKVautvCQ99g&usqp=CAU",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEWQADASTTEwwgN8i64Yl-x8jxHG-ZeFPLXg&usqp=CAU",
       heading: "Bundle Pack",
       subheading: "Onion, Oil, Salt",
       RS: "$35",
       rs: "$50.32",
-    },
-  ];
+    }
   
      
   
-  const duplicatedData = Array(8).fill(data[0]);
+  const duplicatedData = Array(8).fill(0).map((_,index) => ({
+    ...data,
+    id: index + 1,
+  }));
 
+  const navigate = useNavigate();
   return (
     <div >
       <div className="flex ml-5 gap-32 mt-5">
@@ -31,14 +34,13 @@ const PopularPacks = () => {
 <p>Popular Packs</p>
         </div>
         <div className="flex flex-wrap w-full ml-6">
-          {duplicatedData.map((item, index) => (
-         <div>    
+          {duplicatedData.map((item) => (
+         <div key={item.id}>    
            <div
-              key={index}
-              className="card w-44 h-66 bg-base-100 m-2 shadow-xl border-2 border-solid"
+              className="card w-44 h-66 bg-base-100 m-2 shadow-xl border-2 border-solid" onClick={() => navigate(`/bundledetailspp/${item.id}`)}
             >
               <figure>
-                <img className="w-36 h-36 ml-10" src={item.img} alt="Fruits" />
+                <img className="w-36 h-36 " src={item.img} alt="Fruits" />
               </figure>
               <div className="pl-4 ">
                 <h2 className="card-title text-2xl font-light">{item.heading}</h2>
